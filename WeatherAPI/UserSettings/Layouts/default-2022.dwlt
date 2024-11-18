@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 17}
   m_Selected: 1
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -359,7 +359,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -367,16 +367,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Github_Repos\Tools and Plugins_Labs\Lab_APIandWeather\WeatherAPI
+  m_LastProjectPath: C:\Users\jo667825\Documents\GitHub\Lab_APIandWeather\WeatherAPI
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 1}
-    m_SelectedIDs: 78410000
-    m_LastClickedID: 16760
-    m_ExpandedIDs: 00000000044100004c41000000ca9a3bffffff7f
+    m_SelectedIDs: 4c410000
+    m_LastClickedID: 16716
+    m_ExpandedIDs: 00000000044100004c410000b84100002042000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,9 +544,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0e830000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 7a27ffff8a2affff
+      m_SelectedIDs: da830000
+      m_LastClickedID: 33754
+      m_ExpandedIDs: 4025ffff4c26ffff4a27ffff5229ffff882affff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
