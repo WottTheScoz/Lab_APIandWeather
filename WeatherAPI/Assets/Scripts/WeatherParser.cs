@@ -13,4 +13,5 @@ public class WeatherParser : MonoBehaviour
 
         OnParse?.Invoke(weather);
     }
+    
 }
