@@ -3,16 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class WeatherManager : MonoBehaviour
 {
-    public string city = "Orlando";
+    private Scene currentcity;
+    
+    private string city;
     
     string jsonApi;
 
     // Start is called before the first frame update
     void Start()
     {
+        currentcity = SceneManager.GetActiveScene();
+        city = currentcity.name;
         jsonApi = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=62526569f093fe87422ee692264bccfa";
         StartCoroutine(GetWeatherJson(OnJsonDataLoaded));
     }
