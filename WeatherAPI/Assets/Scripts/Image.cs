@@ -14,7 +14,8 @@ public class Image : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(DownloadImage(storeImage));
+        //StartCoroutine(DownloadImage(storeImage));
+        GetWebImage(storeImage);
         PosterMaterial = gameObject.GetComponent<MeshRenderer>();
 
     }
@@ -55,5 +56,17 @@ public class Image : MonoBehaviour
             PosterMaterial.material.mainTexture = posterTexture2D;
         }
         
+    }
+
+    void GetWebImage(Action<Texture2D> callback)
+    {
+        if(posterTexture2D != null)
+        {
+            callback(posterTexture2D);
+        }
+        else
+        {
+            StartCoroutine(DownloadImage(callback));
+        }
     }
 }
