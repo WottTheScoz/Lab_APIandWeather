@@ -26,6 +26,8 @@ public class Weather
     // For example, if I want to get the description of an instance named Orlando:
     // string desc = Orlando.weather[0].description
     // As of now, the index seems to be arbitrary, so I'd recommend using 0.
+    
+    
 }
 
 [System.Serializable]

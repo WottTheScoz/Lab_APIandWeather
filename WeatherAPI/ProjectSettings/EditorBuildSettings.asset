@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Orlando.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/London.unity
+    guid: 6e501ca8b3180574b98812c110f6e4d8
+  - enabled: 1
+    path: Assets/Scenes/Kyoto.unity
+    guid: d532617794bfbe648a318d67f9d7de3a
+  - enabled: 1
+    path: Assets/Scenes/Moscow.unity
+    guid: 6dff8d1bbe4b27748ace5d06ec709417
+  - enabled: 1
+    path: Assets/Scenes/Sydney.unity
+    guid: a4f6aad6e3546d24aad0f46733231d23
   m_configObjects: {}
