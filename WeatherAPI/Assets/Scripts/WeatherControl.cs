@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.Serialization;
+using RenderSettings = UnityEngine.RenderSettings;
 
 public class WeatherControl : MonoBehaviour
 {
     private WeatherParser data;
+    private DirectionalLight Sun;
     
    public Dictionary<string, Material> skyboxes = new Dictionary<string, Material>();
    public List<Material> materials;
@@ -58,6 +61,7 @@ public class WeatherControl : MonoBehaviour
                 }else if (currentTime.CompareTo(sunrise) == -1)
                 {
                     SetWeather("Night");
+                    RenderSettings.sun.colorTemperature = 12000;
                 }else if (currentTime.CompareTo(sunrise) == 1 && currentTime.CompareTo(sunset) == -1)
                 {
                     SetWeather("Day");
@@ -68,6 +72,7 @@ public class WeatherControl : MonoBehaviour
                 else if (currentTime.CompareTo(sunset) == 1)
                 {
                     SetWeather("Night");
+                    RenderSettings.sun.colorTemperature = 12000;
                 }
                 else
                 {
@@ -81,9 +86,12 @@ public class WeatherControl : MonoBehaviour
                 }else if (currentTime.CompareTo(sunrise) == -1)
                 {
                     SetWeather("Night_Moonless");
+                    RenderSettings.sun.intensity = .5f;
+                    RenderSettings.sun.colorTemperature = 12000;
                 }else if (currentTime.CompareTo(sunrise) == 1 && currentTime.CompareTo(sunset) == -1)
                 {
                     SetWeather("Day_Sunless");
+                    RenderSettings.sun.intensity = .8f;
                 }else if (currentTime.CompareTo(sunset) == 0)
                 {
                     SetWeather("Sunset");
@@ -91,6 +99,8 @@ public class WeatherControl : MonoBehaviour
                 else if (currentTime.CompareTo(sunset) == 1)
                 {
                     SetWeather("Night_Moonless");
+                    RenderSettings.sun.intensity = .5f;
+                    RenderSettings.sun.colorTemperature = 12000;
                 }
                 else
                 {
